@@ -13,7 +13,7 @@ from os.path import isfile, join
 in_path = 'D:\\3_DataViz\\2_glaciers\\2_shp\\rawdata\\'
 out_path = 'D:\\3_DataViz\\2_glaciers\\2_shp\\'
 # get the content of the folder
-onlyfiles = [f for f in listdir(in_path) if isfile(join(in_path, f)) if os.path.splitext(in_path+f)[1]=='.shp'  ]
+onlyfiles = [f for f in listdir(in_path) if isfile(join(in_path, f)) if os.path.splitext(in_path+f)[1]=='.shp']
 
 for in_file in onlyfiles :
     # get the input layer
