@@ -56,9 +56,8 @@ for in_file in onlyfiles :
     del d
 
 
-    # Construct a colormap with log scale 
-    # designed by Terry Haran, NSIDC, April 2018. 
-    # Construct an RGB table using a log scale between 1 and 500 m/year.
+    # Build a custom colormap designed by Terry Haran, NSIDC, April 2018.
+    # Build an RGB table using a log scale between 1 and 500 m/year.
     vel = np.exp(np.linspace(np.log(1), np.log(500), num=256)) 
     hue = np.arange(256) / 255.0 
     sat = np.clip(1. / 3 + vel / 187.5, 0, 1) 
