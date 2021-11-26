@@ -9,6 +9,9 @@ from osgeo import gdal,osr
 import os
 from os import listdir
 from os.path import isfile, join
+import matplotlib.colors as colors 
+import matplotlib.pyplot as plt
+import numpy as np
 import numpy as np
 import time
 from datetime import timedelta

@@ -50,7 +50,7 @@ From 3031 to 4326
 ```gdalwarp -overwrite -s_srs EPSG:3031 -t_srs EPSG:4326 -te -180 -90 180 90 Antarctica_2020-07-15_v02_thickness.tif Antarctica_2020-07-15_v02_thickness_4326.tif```
 gdalwarp -overwrite -s_srs EPSG:3412 -t_srs EPSG:4326 -te -180 -90 180 90 antarctica_velocity.tif antarctica_velocity.tif_4326.tif
 
-## 4.b reproject Greeland
+## 4.b reproject Greenland
 
 From 3413 to 3857
 
