@@ -18,7 +18,7 @@ in_file='THICKNESS_RGI-17.7_2021July23_3857_rgba_comp.tif'
 out_file= in_file.replace('_rgba_comp.tif','.mbtiles')
 
 # Create the mbtiles files
-creation_opt = ["TILE_FORMAT=PNG8"]
+creation_opt = ["TILE_FORMAT=PNG8","BLOCKSIZE=512"]
 options = gdal.TranslateOptions(format = 'mbtiles')
 gdal.Translate(destName=out_file ,srcDS=in_file, options = options,creationOptions= creation_opt)
 
